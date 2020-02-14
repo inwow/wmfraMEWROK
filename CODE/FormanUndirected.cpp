@@ -30,3 +30,23 @@ else        { cout << "The nodes in the network have weights" << endl;}
 // Read in the node names with weights
 vector<string> NN;
 vector<double> NW;
+ifstream IN1(argv[2]);
+if(!IN1.is_open()) { cout << "Error: node file" << endl; exit(1); }
+{
+	string line;
+	while(getline(IN1,line))
+	{
+		stringstream DATA(line);
+		string name;
+		DATA >> name;
+			
+			bool flag=0;
+			for(int i=0;i<NN.size();i++)
+			{	
+			if(NN[i]==name) { flag=1; break; } 		
+			}
+
+			if(flag) { cout << "Error: the node " << name << " appears twice." << endl; exit(1); }
+			else
+			{
+				NN.push_back(name);
