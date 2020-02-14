@@ -112,3 +112,27 @@ if(!IN2.is_open()) { cout << "Error: edge file" << endl; exit(1); }
 		if(ewfl)
 		{		
 	 		DATA >> a;
+			if(a<=0.0) 	{ cout << "Error in edge list - edge weight: " << a << endl; exit(1); }	
+			C[i][j]=a; C[j][i]=a;
+		}
+		else
+		{
+			C[i][j]=1; C[j][i]=1;
+		}
+	}
+}
+IN2.close();
+
+// Output file for edges
+ofstream OUT1(argv[5]);
+if(!OUT1.is_open()) { cout << "Error: Output edges" << endl; exit(1); }
+
+// Determine the Forman curvature of an edge
+for(int i=0;i<n;i++)
+{
+
+//cout << "Computing for Node " << i << endl 
+
+	for(int j=0;j<n;j++)
+	{
+		if(C[i][j]>0.0)
