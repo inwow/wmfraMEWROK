@@ -50,3 +50,25 @@ if(!IN1.is_open()) { cout << "Error: node file" << endl; exit(1); }
 			else
 			{
 				NN.push_back(name);
+				if(nwfl)
+				{
+					double a=0;
+					DATA >> a;
+					if(a<=0.0) 	
+					{ 
+					cout << "Warning: Zero or Negative node weight for node " << name << endl; 
+					}
+					NW.push_back(a);	
+				}
+				else
+				{
+				NW.push_back(1);
+				}
+			}			
+	}
+}
+IN1.close();
+
+// Print out the number of nodes in the network
+int n = NN.size(); 
+cout << "The number of nodes in the network is: " << n << endl;
