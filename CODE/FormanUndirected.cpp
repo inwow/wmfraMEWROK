@@ -96,3 +96,19 @@ if(!IN2.is_open()) { cout << "Error: edge file" << endl; exit(1); }
 	string line;
 	while(getline(IN2,line))
 	{	
+		stringstream DATA(line);	
+		string sr, tg;
+		DATA >> sr;
+		DATA >> tg;
+		i=-1; j=-1;		
+		for(int k=0;k<n;k++)
+		{
+			if(NN[k]==sr) { i=k; }
+			if(NN[k]==tg) { j=k; }
+		}			
+		if(i==-1) { cout << "Error in edge list - node:" << sr << endl; exit(1); }
+		if(j==-1) { cout << "Error in edge list - node:" << tg << endl; exit(1); }	 		
+
+		if(ewfl)
+		{		
+	 		DATA >> a;
