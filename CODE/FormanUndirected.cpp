@@ -72,3 +72,27 @@ IN1.close();
 // Print out the number of nodes in the network
 int n = NN.size(); 
 cout << "The number of nodes in the network is: " << n << endl;
+
+// Create space for Adjacency Matrix and Node Weights
+vector<vector<double> > C;
+vector<double> FN;
+{
+	vector<double> temp;
+	for(int i=0;i<n;i++) { temp.push_back(0); FN.push_back(0);}
+	for(int i=0;i<n;i++) C.push_back(temp);
+}
+
+// Check if edges have weights
+int ewfl=atoi(argv[3]);
+if(ewfl==0) { cout << "The edges in the network have no weights" << endl;}
+else        { cout << "The edges in the network have weights" << endl;}
+
+// Read in the edges and their weights
+ifstream IN2(argv[4]);
+if(!IN2.is_open()) { cout << "Error: edge file" << endl; exit(1); }
+{
+	int i,j; 
+	double a=1;
+	string line;
+	while(getline(IN2,line))
+	{	
