@@ -136,3 +136,14 @@ for(int i=0;i<n;i++)
 	for(int j=0;j<n;j++)
 	{
 		if(C[i][j]>0.0)
+		{
+			double fc=0.0;
+			fc+= (NW[i] + NW[j])/C[i][j]; 						
+				
+				// Loop over edges incident on i	
+				for(int k=0;k<n;k++)
+				{
+					if(C[i][k]>0.0)
+					{
+						if(k!=j)
+						{
