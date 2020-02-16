@@ -147,3 +147,18 @@ for(int i=0;i<n;i++)
 					{
 						if(k!=j)
 						{
+							fc -= NW[i]/sqrt(C[i][j]*C[i][k]); 
+						}
+					}								
+				}
+
+				// Loop over edges incident on j	
+				for(int k=0;k<n;k++)
+				{
+					if(C[j][k]>0.0)
+					{
+						if(k!=i)
+						{
+							fc -= NW[j]/sqrt(C[i][j]*C[j][k]); 
+						}
+					}								
