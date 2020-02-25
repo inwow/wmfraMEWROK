@@ -189,3 +189,11 @@ for(int i=0;i<n;i++)
 	OUT2 << NN[i] << "\t" << FN[i] <<"\t" << FN[i]/deg << endl;
 	}
 	else
+	{
+	OUT2 << NN[i] << "\t" << "3"<< "\t"<< "3" << endl;
+	}
+}
+OUT2.close();
+	
+return 0;
+}
