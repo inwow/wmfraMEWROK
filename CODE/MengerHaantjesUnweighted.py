@@ -1,3 +1,3 @@
 """
 ==================================
-Program to compute Menger
+Program to compute Menger and Haantjes curv
