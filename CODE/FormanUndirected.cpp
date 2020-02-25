@@ -162,3 +162,30 @@ for(int i=0;i<n;i++)
 							fc -= NW[j]/sqrt(C[i][j]*C[j][k]); 
 						}
 					}								
+				}
+
+				// Multiply by weight of an edge
+				fc *= C[i][j];
+			
+			FN[i]+= fc;
+			OUT1 << NN[i] << "\t" << NN[j] << "\t" << fc << endl;
+		}
+	}
+
+}
+OUT1.close();
+
+// Output file for nodes
+ofstream OUT2(argv[6]);
+if(!OUT2.is_open()) { cout << "Error: Output nodes" << endl; exit(1); }
+
+// Determine the Forman curvature of an node
+for(int i=0;i<n;i++)
+{
+	int deg=0;
+	for(int j=0;j<n;j++) if(C[i][j]>0.0) deg++;
+	if(deg>0)
+	{
+	OUT2 << NN[i] << "\t" << FN[i] <<"\t" << FN[i]/deg << endl;
+	}
+	else
