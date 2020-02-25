@@ -1,3 +1,3 @@
 """
 ==================================
-Program to compute Menger and Haantjes curv
+Program to compute Menger and Haantjes curvature for edges in
