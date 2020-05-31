@@ -9,4 +9,5 @@ Reference:
 (3) E. Saucan, A. Samal & J. Jost, A Simple Differential Geometry for Networks and Its Generalizations In: H. Cherifi, S. Gaito, J. Mendes, E. Moro, L. Rocha (Eds) Complex Networks and Their Applications VIII. COMPLEX NETWORKS 2019. Studies in Computational Intelligence, Vol. 881. Springer. 
 
 Input 1: Edge_file 
-Input 2: Out_file   
+Input 2: Out_file     
+===================
