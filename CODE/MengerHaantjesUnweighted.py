@@ -19,4 +19,6 @@ import sys
 
 # Creating the undirected and unweighted graph from edge file
 print ("-"*25)
-G = nx.Graph
+G = nx.Graph()
+count=0
+for i in 
