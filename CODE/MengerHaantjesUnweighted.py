@@ -21,4 +21,5 @@ import sys
 print ("-"*25)
 G = nx.Graph()
 count=0
-for i in open(sys.argv[1], 'r')
+for i in open(sys.argv[1], 'r'):
+	e = i.strip().split(
