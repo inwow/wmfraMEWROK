@@ -25,4 +25,5 @@ for i in open(sys.argv[1], 'r'):
 	e = i.strip().split('\t')
 	if e[0]!=e[1]:
 		G.add_edge(e[0], e[1], weight = 1)
-	if e
+	if e[0]==e[1]:
+		count += 1
