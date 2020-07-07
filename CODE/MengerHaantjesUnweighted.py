@@ -29,4 +29,5 @@ for i in open(sys.argv[1], 'r'):
 		count += 1 	
 
 nnodes=G.number_of_nodes()
-nedges=G.number_of
+nedges=G.number_of_edges()
+print ("Graph 
