@@ -28,4 +28,4 @@ for i in open(sys.argv[1], 'r'):
 	if e[0]==e[1]:
 		count += 1 	
 
-nnodes=G.numbe
+nnodes=G.number_of_nodes()
