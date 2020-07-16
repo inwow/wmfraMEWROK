@@ -30,4 +30,5 @@ for i in open(sys.argv[1], 'r'):
 
 nnodes=G.number_of_nodes()
 nedges=G.number_of_edges()
-print ("Graph has \"%d\" nodes and \"%d\" edges"%(
+print ("Graph has \"%d\" nodes and \"%d\" edges"%(nnodes,nedges))
+print ("
