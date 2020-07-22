@@ -34,4 +34,4 @@ print ("Graph has \"%d\" nodes and \"%d\" edges"%(nnodes,nedges))
 print ("Number of self edges is %d"%(count))
 print ("-"*25)
 
-# Compute
+# Compute Menger and Haantje
