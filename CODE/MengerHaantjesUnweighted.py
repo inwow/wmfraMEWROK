@@ -32,4 +32,6 @@ nnodes=G.number_of_nodes()
 nedges=G.number_of_edges()
 print ("Graph has \"%d\" nodes and \"%d\" edges"%(nnodes,nedges))
 print ("Number of self edges is %d"%(count))
-print (
+print ("-"*25)
+
+# Compute
