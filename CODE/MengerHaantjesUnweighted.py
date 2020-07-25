@@ -35,4 +35,4 @@ print ("Number of self edges is %d"%(count))
 print ("-"*25)
 
 # Compute Menger and Haantjes curvature of each edge
-pr
+print("Started computing
