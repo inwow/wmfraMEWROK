@@ -39,4 +39,4 @@ print("Started computing Menger and Haantjes curvature of each edge ...")
 
 mt=(1.0/math.sqrt(3))
 
-R
+RE=open(sys.argv[2
