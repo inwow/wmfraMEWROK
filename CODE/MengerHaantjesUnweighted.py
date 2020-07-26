@@ -41,4 +41,5 @@ mt=(1.0/math.sqrt(3))
 
 RE=open(sys.argv[2],'w')
 
-for u,v 
+for u,v in G.edges():
+	mce
