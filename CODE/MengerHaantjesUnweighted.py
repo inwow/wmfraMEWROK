@@ -37,4 +37,6 @@ print ("-"*25)
 # Compute Menger and Haantjes curvature of each edge
 print("Started computing Menger and Haantjes curvature of each edge ...")
 
-mt=(1
+mt=(1.0/math.sqrt(3))
+
+R
