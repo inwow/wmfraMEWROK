@@ -45,4 +45,5 @@ for u,v in G.edges():
 	mce=0
 	hce=0
 	nE=0
-	for pl in rang
+	for pl in range(1,4):
+		paths=nx.a
