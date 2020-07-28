@@ -42,4 +42,6 @@ mt=(1.0/math.sqrt(3))
 RE=open(sys.argv[2],'w')
 
 for u,v in G.edges():
-	mce
+	mce=0
+	hce=0
+	nE
