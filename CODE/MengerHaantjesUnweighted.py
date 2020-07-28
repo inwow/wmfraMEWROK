@@ -44,4 +44,5 @@ RE=open(sys.argv[2],'w')
 for u,v in G.edges():
 	mce=0
 	hce=0
-	nE
+	nE=0
+	for pl in rang
