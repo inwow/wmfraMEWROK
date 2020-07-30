@@ -46,4 +46,4 @@ for u,v in G.edges():
 	hce=0
 	nE=0
 	for pl in range(1,4):
-		paths=nx.all_simple_paths(
+		paths=nx.all_simple_paths(G, source=u, targ
