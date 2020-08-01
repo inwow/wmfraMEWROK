@@ -47,4 +47,4 @@ for u,v in G.edges():
 	nE=0
 	for pl in range(1,4):
 		paths=nx.all_simple_paths(G, source=u, target=v,cutoff=pl)
-		nP =
+		nP = len(list(pat
