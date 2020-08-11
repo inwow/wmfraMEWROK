@@ -49,4 +49,5 @@ for u,v in G.edges():
 		paths=nx.all_simple_paths(G, source=u, target=v,cutoff=pl)
 		nP = len(list(paths))		
 		hce += (nP-nE)*math.sqrt(pl - 1)
-		if pl 
+		if pl == 2:
+			mce += (nP-
