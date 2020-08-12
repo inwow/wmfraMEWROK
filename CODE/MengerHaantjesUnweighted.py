@@ -50,4 +50,6 @@ for u,v in G.edges():
 		nP = len(list(paths))		
 		hce += (nP-nE)*math.sqrt(pl - 1)
 		if pl == 2:
-			mce += (nP-
+			mce += (nP-nE)*mt 
+		nE = nP
+		
