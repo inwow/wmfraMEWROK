@@ -52,4 +52,5 @@ for u,v in G.edges():
 		if pl == 2:
 			mce += (nP-nE)*mt 
 		nE = nP
-		
+			
+	RE.write("%s\t
