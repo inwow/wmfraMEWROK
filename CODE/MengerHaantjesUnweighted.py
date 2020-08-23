@@ -53,4 +53,4 @@ for u,v in G.edges():
 			mce += (nP-nE)*mt 
 		nE = nP
 			
-	RE.write("%s\t
+	RE.write("%s\t%s\t%f\t%f\n"%(u,v,mce,h
