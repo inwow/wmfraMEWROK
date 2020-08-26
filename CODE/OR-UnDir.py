@@ -38,3 +38,24 @@ for i in open(sys.argv[2], 'r'):
 		Graph.add_edge(e[0], e[1], weight = float(e[2]))
 
 edgesize=Graph.number_of_edges()
+nodesize=Graph.number_of_nodes()
+print ("Graph has \"%d\" edges and \"%d\" nodes"%(edgesize, nodesize))
+
+# Function for displaying the updates by a progress bar in console
+#===============================================================================
+
+def Progress(progress):
+	
+    barLength = 50
+    status = ""
+    if isinstance(progress, int):
+        progress = float(progress)
+    if not isinstance(progress, float):
+        progress = 0
+        status = "error: progress var must be float\r\n"
+    if progress < 0:
+        progress = 0
+        status = "Halt...\r\n"
+    if progress >= 1:
+        progress = 1
+        status = "Done...\r\n"
