@@ -76,3 +76,18 @@ def RicciCurvature_Edge(G, vertex_1, vertex_2, alpha, length):
 
 	if length[vertex_1][vertex_2] < EPSILON:
 		assert "ricciCurvature" in G[vertex_1][vertex_2], "Divided by Zero and no ricci curvature exist in Graph!"
+		print("Zero Weight edge detected, return previous ricci Curvature instead.")
+		return G[vertex_1][vertex_2]["ricciCurvature"]
+
+	vertex_1_nbr = list(G.neighbors(vertex_1))
+	vertex_2_nbr = list(G.neighbors(vertex_2))
+
+	assert len(vertex_1_nbr) > 0, "vertex_1 Nbr=0?"
+	assert len(vertex_2_nbr) > 0, "vertex_2 Nbr=0?" + str(vertex_1) + " " + str(vertex_2)
+	x = [(1.0 - alpha) / len(vertex_1_nbr)] * len(vertex_1_nbr)
+	y = [(1.0 - alpha) / len(vertex_2_nbr)] * len(vertex_2_nbr)
+
+	vertex_1_nbr.append(vertex_1)
+	vertex_2_nbr.append(vertex_2)
+	x.append(alpha)
+	y.append(alpha)
