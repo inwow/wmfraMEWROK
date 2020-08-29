@@ -107,3 +107,22 @@ def RicciCurvature_Edge(G, vertex_1, vertex_2, alpha, length):
 	rho = cvx.Variable(shape=(len(vertex_2_nbr), len(vertex_1_nbr)))
 
 	# objective function d(x,y) * rho * x, need to do element-wise multiply here
+	obj = cvx.Minimize(cvx.sum(cvx.multiply(np.multiply(d.T, x.T), rho)))
+
+	# \sigma_i rho_{ij}=[1,1,...,1]
+	vertex_1_sum = cvx.sum(rho, axis=0)
+	constrains = [rho * x == y, vertex_1_sum == np.ones(len(vertex_1_nbr)), 0 <= rho, rho <= 1]
+	prob = cvx.Problem(obj, constrains)
+
+	m = prob.solve(solver='ECOS')	
+	#print(time.time() - t0, " secs for cvxpy.",)
+
+	result = 1 - (m / length[vertex_1][vertex_2])	# divided by the length of d(i, j)
+	#print("#vertex_1_nbr: %d, #vertex_2_nbr: %d, Ricci curvature = %f	"%(len(vertex_1_nbr), len(vertex_2_nbr), result))
+	#print("%s\t%s\t%f"%(vertex_1, vertex_2, result))
+	EF.write("%s\t%s\t%f\n"%(vertex_1, vertex_2, result*2))
+	return result
+
+
+
+# Function Compute ricci curvature for all nodes and all edges in G.
