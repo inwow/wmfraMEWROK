@@ -59,3 +59,20 @@ def Progress(progress):
     if progress >= 1:
         progress = 1
         status = "Done...\r\n"
+    block = int(round(barLength*progress))
+    text = "\rPercent: [{0}] {1}% {2}".format( "="*block + " "*(barLength-block), round((progress*100),3), status)
+    sys.stdout.write(text)
+    sys.stdout.flush()
+
+
+# Function to compute the Olliver ricci curvature for a given edge
+#===============================================================================
+
+def RicciCurvature_Edge(G, vertex_1, vertex_2, alpha, length):
+
+	EPSILON = 1e-7	# to prevent division by zero
+
+	assert vertex_1 != vertex_2, "Self loop is not allowed."	
+
+	if length[vertex_1][vertex_2] < EPSILON:
+		assert "ricciCurvature" in G[vertex_1][vertex_2], "Divided by Zero and no ricci curvature exist in Graph!"
