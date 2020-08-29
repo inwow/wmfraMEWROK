@@ -91,3 +91,19 @@ def RicciCurvature_Edge(G, vertex_1, vertex_2, alpha, length):
 	vertex_2_nbr.append(vertex_2)
 	x.append(alpha)
 	y.append(alpha)
+
+	# construct the cost dictionary from x to y
+	d = np.zeros((len(x), len(y)))
+
+	for i, s in enumerate(vertex_1_nbr):
+		for j, t in enumerate(vertex_2_nbr):
+			assert t in length[s], "vertex_2 node not in list, should not happened, pair (%d, %d)" % (s, t)
+			d[i][j] = length[s][t]
+
+	x = np.array([x]).T	# the mass that vertex_1 neighborhood initially owned
+	y = np.array([y]).T	# the mass that vertex_2 neighborhood needs to received
+
+	t0 = time.time()
+	rho = cvx.Variable(shape=(len(vertex_2_nbr), len(vertex_1_nbr)))
+
+	# objective function d(x,y) * rho * x, need to do element-wise multiply here
