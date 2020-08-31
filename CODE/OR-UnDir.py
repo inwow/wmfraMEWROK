@@ -126,3 +126,21 @@ def RicciCurvature_Edge(G, vertex_1, vertex_2, alpha, length):
 
 
 # Function Compute ricci curvature for all nodes and all edges in G.
+#================================================================================
+
+def RicciCurvature(G, alpha=0.5, weight=None):
+	# Construct the all pair shortest path lookup
+	t0 = time.time()
+	print ("> Calculate Dijkstra path length") 
+	print ("Time :")
+	now = datetime.datetime.now()
+	print (now.strftime("%H:%M:%S"))
+	length = dict(nx.all_pairs_dijkstra_path_length(G, weight=weight))
+	print ("Finished :")
+	now = datetime.datetime.now()
+	print ("Time taken = ", round((time.time() - t0)/60.0), "min")
+	# compute ricci curvature
+	no=1.0
+	print ("> Calculate Olliver-Ricci for each edge")
+	for s, t in G.edges():
+		G[s][t]['ricciCurvature'] = RicciCurvature_Edge(G, vertex_1=s, vertex_2=t, alpha=alpha, length=length)
