@@ -176,3 +176,9 @@ print ("Current date and time : ")
 now = datetime.datetime.now()
 print (now.strftime("%Y-%m-%d %H:%M:%S"))
 end_time = time.time()
+sec=(-start_time+end_time)
+print ("="*25)
+print ("Time taken = %f min (%f sec)"%(sec/60, sec))
+print ("-"*75)
+
+
