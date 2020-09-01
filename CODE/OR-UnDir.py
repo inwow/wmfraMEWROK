@@ -144,3 +144,20 @@ def RicciCurvature(G, alpha=0.5, weight=None):
 	print ("> Calculate Olliver-Ricci for each edge")
 	for s, t in G.edges():
 		G[s][t]['ricciCurvature'] = RicciCurvature_Edge(G, vertex_1=s, vertex_2=t, alpha=alpha, length=length)
+		Progress(no/edgesize) # Progress bar on terminal
+		no+=1
+	# compute node ricci curvature to graph G
+	print("> Node ricci curvature started")
+	NF=open(sys.argv[4],'w')
+	no=1.0
+	for n in G.nodes():
+		rcsum = 0	# sum of the neighbor Ricci curvature
+		if G.degree(n) != 0:
+			for nbr in G.neighbors(n):
+				if 'ricciCurvature' in G[n][nbr]:
+					rcsum += G[n][nbr]['ricciCurvature']
+			# assign the node Ricci curvature to be the average of node's adjacency edges
+			G.node[n]['ricciCurvature'] = rcsum / G.degree(n)
+			NF.write("%s\t%f\t%f\n"%(n, G.node[n]['ricciCurvature'], rcsum))
+		#else:
+		 #       NF.write("%s\t%f\n"%(n, 3))
