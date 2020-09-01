@@ -161,3 +161,18 @@ def RicciCurvature(G, alpha=0.5, weight=None):
 			NF.write("%s\t%f\t%f\n"%(n, G.node[n]['ricciCurvature'], rcsum))
 		#else:
 		 #       NF.write("%s\t%f\n"%(n, 3))
+
+		Progress(no/nodesize)
+		no+=1
+	#print("> Node ricci curvature computation done.")'''
+	return G
+
+#================================================================================
+
+# Calling the main function to compute Olliver-Ricci curvature of the graph
+print ("Olliver-Ricci curvature for edge")
+OlliverRicci=RicciCurvature(Graph, alpha=0.5, weight='weight')
+print ("Current date and time : ")
+now = datetime.datetime.now()
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
+end_time = time.time()
