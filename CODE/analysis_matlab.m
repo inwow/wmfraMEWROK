@@ -22,3 +22,24 @@ end
 %% 
 %% function for mean correlation
 %%
+function Mean= Corr_mean(daily_retn,shift,epoch,Fr)
+r1=shift*(Fr-1)+1;
+r2=shift*(Fr-1)+epoch;
+Mean=mean2(corrcoef(daily_retn(r1:r2,:)));
+end
+
+%%
+%% Garch volatility
+%% 
+function condVol=garchVol(Index)
+Index2=Index-mean(Index);
+model1=garch('GARCHLags',1,'ARCHLags',1);
+[estMd1,estParamCov,logL]=estimate(model1,Index2);
+condVar=infer(estMd1,Index2);
+condVol=sqrt(condVar);
+end
+
+%%
+%% portfolio optimization
+%%
+function risk1=portfolio_optimization(daily_retn,symbol,shift,epoch,Fr)
