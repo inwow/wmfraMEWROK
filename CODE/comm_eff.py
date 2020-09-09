@@ -1,1 +1,1 @@
-# Python code for calculating c
+# Python code for calculating communication effici
