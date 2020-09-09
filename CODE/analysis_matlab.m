@@ -43,3 +43,12 @@ end
 %% portfolio optimization
 %%
 function risk1=portfolio_optimization(daily_retn,symbol,shift,epoch,Fr)
+r1=shift*(Fr-1)+1;
+r2=shift*(Fr-1)+epoch;
+dailyReturn = daily_retn(r1:r2,:);
+p = Portfolio('AssetList',symbol,'RiskFreeRate',0.01/252);
+p = estimateAssetMoments(p, dailyReturn);
+p = setDefaultConstraints(p);
+w1 = estimateMaxSharpeRatio(p);
+[risk1, ret1] = estimatePortMoments(p, w1);
+end
