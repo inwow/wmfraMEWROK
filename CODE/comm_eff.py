@@ -1,1 +1,1 @@
-# Python code for
+# Python code for calculating c
