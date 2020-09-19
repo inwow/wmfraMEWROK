@@ -3,4 +3,4 @@
 # Latora, V., and Marchiori, M. (2001). Efficient behavior of small-world networks. Physical Review Letters 87.
 # Latora, V., and Marchiori, M. (2003). Economic small-world behavior in weighted networks. Eur Phys J B 32, 249-263.
 # Input 1: Node_file
-# 
+# Input 2: Edge_file 
