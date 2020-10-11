@@ -6,4 +6,4 @@
 # Input 2: Edge_file with weights
 """
 =================================================================================================
-If you are using th
+If you are using this code, kindly 
