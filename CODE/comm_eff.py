@@ -7,4 +7,4 @@
 """
 =================================================================================================
 If you are using this code, kindly cite the following articles:
-(1) S. Venkatesan, R.P. Vivek-Ananth, R.P. Sreejith, P. Mangalapandi, A.A. Hassanali & A. Sa
+(1) S. Venkatesan, R.P. Vivek-Ananth, R.P. Sreejith, P. Mangalapandi, A.A. Hassanali & A. Samal, Network a
