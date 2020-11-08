@@ -16,4 +16,5 @@ import igraph as ig
 import sys
 
 #edge files folder path
-nodefile=
+nodefile=sys.argv[1]
+infile=s
