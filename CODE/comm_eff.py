@@ -12,4 +12,5 @@ If you are using this code, kindly cite the following articles:
 =================================================================================================
 """
 
-import i
+import igraph as ig
+import sys
