@@ -17,4 +17,6 @@ import sys
 
 #edge files folder path
 nodefile=sys.argv[1]
-infile=s
+infile=sys.argv[2]
+
+G=ig.Gr
