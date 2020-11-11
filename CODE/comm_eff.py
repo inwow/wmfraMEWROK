@@ -19,4 +19,4 @@ import sys
 nodefile=sys.argv[1]
 infile=sys.argv[2]
 
-G=ig.Gr
+G=ig.Graph.Read_Ncol(i
