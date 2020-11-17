@@ -22,4 +22,4 @@ infile=sys.argv[2]
 G=ig.Graph.Read_Ncol(infile,weights=True,directed=False,names=True)
 
 N=G.vcount()
-nodes=[i.strip().split()[0] for i in open(
+nodes=[i.strip().split()[0] for i in open(nodefile) if isin
