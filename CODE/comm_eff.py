@@ -26,4 +26,4 @@ nodes=[i.strip().split()[0] for i in open(nodefile) if isinstance(int(i.strip().
 n_nodes=len(nodes)
 n_isolated_nodes=n_nodes-N
 
-if n_iso
+if n_isolated_nodes != 0:
