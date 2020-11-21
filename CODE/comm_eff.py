@@ -27,4 +27,5 @@ n_nodes=len(nodes)
 n_isolated_nodes=n_nodes-N
 
 if n_isolated_nodes != 0:
-	G.add_vertices(n_isol
+	G.add_vertices(n_isolated_nodes)
+N=G.v
