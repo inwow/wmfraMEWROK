@@ -30,4 +30,7 @@ if n_isolated_nodes != 0:
 	G.add_vertices(n_isolated_nodes)
 N=G.vcount()
 
-length=G.shortest_paths_dijkstra(weight
+length=G.shortest_paths_dijkstra(weights='weight')
+
+temp=0
+fo
