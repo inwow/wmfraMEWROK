@@ -34,4 +34,4 @@ length=G.shortest_paths_dijkstra(weights='weight')
 
 temp=0
 for i in length:
-	
+	temp+=sum([1
