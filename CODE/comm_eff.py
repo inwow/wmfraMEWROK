@@ -33,4 +33,5 @@ N=G.vcount()
 length=G.shortest_paths_dijkstra(weights='weight')
 
 temp=0
-fo
+for i in length:
+	
