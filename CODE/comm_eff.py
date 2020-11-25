@@ -36,3 +36,7 @@ temp=0
 for i in length:
 	temp+=sum([1.0/x for x in i if x!=0])
 ce=float(temp)/float(N*(N-1))
+
+print(ce)
+
+
