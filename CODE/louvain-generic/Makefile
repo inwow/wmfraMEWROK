@@ -9,3 +9,24 @@ OBJ1= $(DIRSRC)graph_binary.o $(DIRSRC)louvain.o $(DIRSRC)quality.o $(DIRSRC)mod
 OBJ2= $(DIRSRC)graph.o 
 
 all: $(EXEC)
+
+louvain : $(OBJ1) $(DIRSRC)main_louvain.o
+	$(CXX) -o $@ $^ $(CXXFLAGS)
+
+convert : $(OBJ2) $(DIRSRC)main_convert.o
+	$(CXX) -o $@ $^ $(CXXFLAGS)
+
+hierarchy : $(DIRSRC)main_hierarchy.o
+	$(CXX) -o $@ $^ $(CXXFLAGS)
+
+matrix : $(DIRSRC)main_matrix.o
+	$(CXX) -o $@ $^ $(CXXFLAGS)
+
+##########################################
+# Generic rules
+##########################################
+
+%.o: %.cpp %.h
+	$(CXX) -o  $@ -c $< $(CXXFLAGS)
+
+%.o: %.cpp
