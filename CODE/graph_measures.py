@@ -23,3 +23,25 @@ if measure == "EdgeCount":
   	print( str(G.number_of_edges()) )
   
 elif measure == "AverageDegree":
+  	dsum = 0
+  	tot = 0
+  	for item in list(G.degree()):
+    		dsum = dsum + item[1]
+    		tot = tot + 1
+ 	
+	avg = float(dsum) / float(tot)
+	print(str(avg))   
+
+elif measure == "AverageWeightedDegree":
+  	dsum = 0
+  	tot = 0
+  	for item in list(G.degree(weight='metric')):
+    		dsum = dsum + item[1]
+    		tot = tot + 1
+ 	
+	avg = float(dsum) / float(tot)
+	print(str(avg))     
+
+elif measure == "EdgeDensity":
+  	tot = 0.5*( G.number_of_nodes()*(G.number_of_nodes()-1) )
+  	print( str( float(G.number_of_edges()) / tot ) )
