@@ -45,3 +45,12 @@ elif measure == "AverageWeightedDegree":
 elif measure == "EdgeDensity":
   	tot = 0.5*( G.number_of_nodes()*(G.number_of_nodes()-1) )
   	print( str( float(G.number_of_edges()) / tot ) )
+
+elif measure == "Diameter":
+ 	print(str(float(nx.diameter(G))))
+
+elif measure == "AverageClustering":
+ 	print(str(float(nx.average_clustering(G))))
+
+elif measure == "AverageShortestPathLength":
+ 	print(str(float(nx.average_shortest_path_length(G,weight='metric'))))
