@@ -30,3 +30,10 @@ matrix : $(DIRSRC)main_matrix.o
 	$(CXX) -o  $@ -c $< $(CXXFLAGS)
 
 %.o: %.cpp
+	$(CXX) -o $@ -c $< $(CXXFLAGS)
+
+clean:
+	rm -f $(DIRSRC)*.o
+
+mrproper: clean
+	rm -f *~ $(EXEC)
