@@ -33,3 +33,25 @@ Location : Paris, France
 Time	 : July 2014
 
 -----------------------------------------------------------------------------
+
+Disclaimer:
+If you find a bug, please send a bug report to jean-loup.guillaume@lip6.fr
+including if necessary the input file and the parameters that caused the bug.
+You can also send me any comment or suggestion about the program.
+
+Note that the program is expecting a friendly use and therefore does not make
+much verifications about the arguments.
+
+-----------------------------------------------------------------------------
+
+
+This package offers a set of functions to use in order to compute 
+communities on graphs weighted or unweighted. A typical sequence of 
+actions is:
+
+1. Conversion from a text format (each line contains a couple "src dest")
+./convert -i graph.txt -o graph.bin
+This program can also be used to convert weighted graphs (each line contain
+a triple "src dest w") using -w option:
+./convert -i graph.txt -o graph.bin -w graph.weights
+Finally, nodes can be renumbered from 0 to nb_nodes-1 using -r option
