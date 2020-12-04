@@ -55,3 +55,28 @@ This program can also be used to convert weighted graphs (each line contain
 a triple "src dest w") using -w option:
 ./convert -i graph.txt -o graph.bin -w graph.weights
 Finally, nodes can be renumbered from 0 to nb_nodes-1 using -r option
+(less space wasted in some cases):
+./convert -i graph.txt -o graph.bin -r labelings_connection_file.txt
+
+
+2. Computes communities with a specified quality function and displays hierarchical tree:
+./louvain graph.bin -l -1 -v -q id_qual > graph.tree
+
+To ensure a faster computation (with a loss of quality), one can use
+the -e option to specify that the program must stop if the increase of
+modularity is below epsilon for a given iteration or pass:
+./louvain graph.bin -l -1 -q id_qual -e 0.001 > graph.tree
+
+The program can deal with weighted networks using -w option:
+./louvain graph.bin -l -1 -q id_qual -w graph.weights > graph.tree
+In this specific case, the convertion step must also use the -w option.
+
+The program can also start with any given partition using -p option
+./louvain graph.bin -q id_qual -p graph.part -v
+
+
+3. Displays information on the tree structure (number of hierarchical
+levels and nodes per level):
+./hierarchy graph.tree
+
+Displays the belonging of nodes to communities for a given level of the tree:
