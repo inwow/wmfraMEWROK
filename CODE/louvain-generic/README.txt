@@ -80,3 +80,16 @@ levels and nodes per level):
 ./hierarchy graph.tree
 
 Displays the belonging of nodes to communities for a given level of the tree:
+./hierarchy graph.tree -l 2 > graph_node2comm_level2
+
+Displays the belonging of nodes to communities for the last level of the tree:
+./hierarchy graph.tree -m > graph_node2comm_lastlevel
+
+
+4. To display the X relational matrix for a given level of the tree:
+./matrix graph.tree -l 2 > graph_X_level2
+
+Displays the X relational matrix for the last level of the tree:
+./matrix graph.tree -m > graph_node2comm_lastlevel  
+
+
