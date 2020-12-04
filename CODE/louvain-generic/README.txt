@@ -93,3 +93,19 @@ Displays the X relational matrix for the last level of the tree:
 ./matrix graph.tree -m > graph_node2comm_lastlevel  
 
 
+
+-----------------------------------------------------------------------------
+
+Known bugs or restrictions:
+- the number of nodes is stored on int (4 bytes) and the number of links on unsigned long long (8 bytes).
+- the program is not suited for 32 bits Windows systems.
+
+-----------------------------------------------------------------------------
+
+Version history:
+The following modifications have been made from version 0.1 and 0.2:
+- weights are now stored using long double (integer in V0.1 and float in V0.2)
+- degrees are stored on 8 bytes (unsigned long long) allowing large graphs to be decomposed
+- weights are stored in a separate file, which allows disk usage reduction if
+  different weights are to be used on the same topology
+- any given partition can be used as a seed for the algorithm rather than just
