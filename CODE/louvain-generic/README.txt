@@ -109,3 +109,13 @@ The following modifications have been made from version 0.1 and 0.2:
 - weights are stored in a separate file, which allows disk usage reduction if
   different weights are to be used on the same topology
 - any given partition can be used as a seed for the algorithm rather than just
+  the trivial partition where each node belongs to its own community
+- initial network can contain loops if network is considered weighted
+- graph is not renumbered by default in the convert program
+- an optional verbose mode has been added and the program is silent by default
+- some portions of the code have been c++ improved (type * -> vector<type>)
+These modifications imply that any binary graph file created with the previous 
+versions of the code is not comptabile with this version. You must therefore regenerate all the binary files.
+
+Version 0.1 and 0.2:
+- initial community detection algorithm
