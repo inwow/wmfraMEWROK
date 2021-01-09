@@ -20,3 +20,19 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
+// 
+// You should have received a copy of the GNU Lesser General Public License
+// along with Louvain algorithm.  If not, see <http://www.gnu.org/licenses/>.
+//-----------------------------------------------------------------------------
+// Author   : E. Lefebvre, adapted by J.-L. Guillaume and R. Campigotto
+// Email    : jean-loup.guillaume@lip6.fr
+// Location : Paris, France
+// Time	    : July 2014
+//-----------------------------------------------------------------------------
+// see README.txt for more details
+
+
+#include "dp.h"
+
+using namespace std;
+
