@@ -36,3 +36,16 @@
 
 using namespace std;
 
+
+DP::DP(Graph & gr, long double sum, long double max_w):Quality(gr,"Profile Difference"),kappa(size),sum_sq(sum),max(max_w) {
+  n2c.resize(size);
+
+  in.resize(size);
+  w.resize(size);
+
+  // initialization
+  for (int i=0 ; i<size ; i++) {
+    n2c[i] = i;
+    in[i]  = g.nb_selfloops(i);
+    w[i]   = g.nodes_w[i];
+  }
