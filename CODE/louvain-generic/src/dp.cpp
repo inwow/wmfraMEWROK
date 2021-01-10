@@ -49,3 +49,26 @@ DP::DP(Graph & gr, long double sum, long double max_w):Quality(gr,"Profile Diffe
     in[i]  = g.nb_selfloops(i);
     w[i]   = g.nodes_w[i];
   }
+}
+
+DP::~DP() {
+  in.clear();
+  w.clear();
+}
+
+long double
+DP::graph_weighting(Graph *g) {
+  long double sum_sq = 0.0L;
+  
+  vector<long double> aux_weights;
+  
+  // foreach weight, change Aij to 2Aij / (d(i)+d(j))
+  for (int u=0 ; u < g->nb_nodes ; u++) {
+    pair<vector<int>::iterator, vector<long double>::iterator> p = g->neighbors(u);
+    int deg = g->nb_neighbors(u);
+    for (int i=0 ; i < deg ; i++) {
+      int neigh = *(p.first+i);
+      long double neigh_w = 0.0L;
+      
+      if (g->weights.size() == 0)
+	neigh_w = 2.0L / ((long double)deg + (long double)(g->nb_neighbors(neigh)));
