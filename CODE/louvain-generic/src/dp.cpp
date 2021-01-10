@@ -96,3 +96,22 @@ DP::graph_weighting(Graph *g) {
 
   return sum_sq;
 }
+
+
+long double
+DP::quality() {
+  long double q = 0.0L;
+  long double n = (long double)g.sum_nodes_w;
+
+  for (int i=0 ; i < size ; i++) {
+    long double wc = (long double)w[i];
+    if (wc > 0.0L)
+      q += 2.0L*in[i] / wc;
+  }
+  
+  q -= (sum_sq + (long double)kappa);
+
+  q /= n*n*max;
+  
+  return q;
+}
