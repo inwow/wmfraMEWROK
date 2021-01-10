@@ -72,3 +72,27 @@ DP::graph_weighting(Graph *g) {
       
       if (g->weights.size() == 0)
 	neigh_w = 2.0L / ((long double)deg + (long double)(g->nb_neighbors(neigh)));
+      else {
+	long double old_neigh = (long double)*(p.second+i);
+	neigh_w = 2.0L*old_neigh / ((long double)deg + (long double)(g->nb_neighbors(neigh)));
+      }
+      
+      aux_weights.push_back(neigh_w);
+      
+      sum_sq += neigh_w*neigh_w;
+    }
+  }
+  
+  g->weights.clear();
+  g->weights = aux_weights;
+  
+  g->total_weight = 0.0L;
+  
+  // Compute total weight
+  for (int i=0 ; i < g->nb_nodes ; i++)
+    g->total_weight += (long double)(g->weighted_degree(i));
+
+  aux_weights.clear();
+
+  return sum_sq;
+}
