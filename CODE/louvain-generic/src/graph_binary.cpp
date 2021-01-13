@@ -22,3 +22,23 @@
 // GNU Lesser General Public License for more details.
 // 
 // You should have received a copy of the GNU Lesser General Public License
+// along with Louvain algorithm.  If not, see <http://www.gnu.org/licenses/>.
+//-----------------------------------------------------------------------------
+// Author   : E. Lefebvre, adapted by J.-L. Guillaume and R. Campigotto
+// Email    : jean-loup.guillaume@lip6.fr
+// Location : Paris, France
+// Time	    : July 2014
+//-----------------------------------------------------------------------------
+// see README.txt for more details
+
+
+#include <fstream>
+#include "graph_binary.h"
+
+
+Graph::Graph() {
+  nb_nodes = 0;
+  nb_links = 0ULL;
+
+  total_weight = 0.0L;
+  sum_nodes_w = 0;
