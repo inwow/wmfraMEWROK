@@ -90,3 +90,27 @@ Graph::Graph(char *filename, char *filename_w, int type) {
 
   // Compute total weight
   for (int i=0 ; i<nb_nodes ; i++)
+    total_weight += (long double)weighted_degree(i);
+
+  nodes_w.assign(nb_nodes, 1);
+  sum_nodes_w = nb_nodes;
+}
+
+long double
+Graph::max_weight() {
+  long double max = 1.0L;
+
+  if (weights.size()!=0)
+    max = *max_element(weights.begin(),weights.end());
+  
+  return max;
+}
+
+void
+Graph::assign_weight(int node, int weight) {
+  sum_nodes_w -= nodes_w[node];
+
+  nodes_w[node] = weight;
+
+  sum_nodes_w += weight;
+}
