@@ -74,3 +74,19 @@ Graph::Graph(char *filename, char *filename_w, int type) {
   total_weight = 0.0L;
   if (type==WEIGHTED) {
     ifstream finput_w;
+    finput_w.open(filename_w,fstream::in | fstream::binary);
+    if (finput_w.is_open() != true) {
+      cerr << "The file " << filename_w << " does not exist" << filename << endl;
+      exit(EXIT_FAILURE);
+    }
+
+    weights.resize(nb_links);
+    finput_w.read((char *)(&weights[0]), nb_links*sizeof(long double));
+    if (finput_w.rdstate() != ios::goodbit) {
+      cerr << "The file " << filename_w << " does not correspond to valid weights for the graph" << filename << endl;
+      exit(EXIT_FAILURE);
+    }
+  }
+
+  // Compute total weight
+  for (int i=0 ; i<nb_nodes ; i++)
