@@ -58,3 +58,19 @@ Graph::Graph(char *filename, char *filename_w, int type) {
     cerr << "The file " << filename << " is not a valid graph" << endl;
     exit(EXIT_FAILURE);
   }
+  
+  // Read cumulative degree sequence: 8 bytes for each node
+  // cum_degree[0]=degree(0); cum_degree[1]=degree(0)+degree(1), etc.
+  degrees.resize(nb_nodes);
+  finput.read((char *)&degrees[0], nb_nodes*sizeof(unsigned long long));
+
+  // Read links: 4 bytes for each link (each link is counted twice)
+  nb_links = degrees[nb_nodes-1];
+  links.resize(nb_links);
+  finput.read((char *)(&links[0]), nb_links*sizeof(int));
+
+  // IF WEIGHTED, read weights: 10 bytes for each link (each link is counted twice)
+  weights.resize(0);
+  total_weight = 0.0L;
+  if (type==WEIGHTED) {
+    ifstream finput_w;
