@@ -42,3 +42,19 @@ Graph::Graph() {
 
   total_weight = 0.0L;
   sum_nodes_w = 0;
+}
+
+Graph::Graph(char *filename, char *filename_w, int type) {
+  ifstream finput;
+  finput.open(filename,fstream::in | fstream::binary);
+  if (finput.is_open() != true) {
+    cerr << "The file " << filename << " does not exist" << endl;
+    exit(EXIT_FAILURE);
+  }
+
+  // Read number of nodes on 4 bytes
+  finput.read((char *)&nb_nodes, sizeof(int));
+  if (finput.rdstate() != ios::goodbit) {
+    cerr << "The file " << filename << " is not a valid graph" << endl;
+    exit(EXIT_FAILURE);
+  }
