@@ -130,3 +130,13 @@ Graph::add_selfloops() {
       int neigh = *(p.first+i);
       aux_links.push_back(neigh);
     }
+
+    sum_d += (unsigned long long)deg;
+
+    if (nb_selfloops(u) == 0.0L) {
+      aux_links.push_back(u); // add a selfloop
+      sum_d += 1ULL;
+    }
+
+    aux_deg.push_back(sum_d); // add the (new) degree of vertex u
+  }
