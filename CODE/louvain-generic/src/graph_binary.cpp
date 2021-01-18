@@ -114,3 +114,19 @@ Graph::assign_weight(int node, int weight) {
 
   sum_nodes_w += weight;
 }
+
+void
+Graph::add_selfloops() {
+  vector<unsigned long long> aux_deg;
+  vector<int> aux_links;
+
+  unsigned long long sum_d = 0ULL;
+
+  for (int u=0 ; u < nb_nodes ; u++) {
+    pair<vector<int>::iterator, vector<long double>::iterator> p = neighbors(u);
+    int deg = nb_neighbors(u);
+
+    for (int i=0 ; i < deg ; i++) {
+      int neigh = *(p.first+i);
+      aux_links.push_back(neigh);
+    }
