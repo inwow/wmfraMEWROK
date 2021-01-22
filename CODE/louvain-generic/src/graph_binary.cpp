@@ -140,3 +140,22 @@ Graph::add_selfloops() {
 
     aux_deg.push_back(sum_d); // add the (new) degree of vertex u
   }
+
+  links = aux_links;
+  degrees = aux_deg;
+  
+  nb_links += (unsigned long long)nb_nodes;
+}
+
+void
+Graph::display() {
+  for (int node=0 ; node<nb_nodes ; node++) {
+    pair<vector<int>::iterator, vector<long double>::iterator > p = neighbors(node);
+    cout << node << ":" ;
+    for (int i=0 ; i<nb_neighbors(node) ; i++) {
+      if (true) {
+	if (weights.size()!=0)
+	  cout << " (" << *(p.first+i) << " " << *(p.second+i) << ")";
+	else
+	  cout << " " << *(p.first+i);
+      }
