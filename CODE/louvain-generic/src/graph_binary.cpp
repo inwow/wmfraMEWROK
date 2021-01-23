@@ -174,3 +174,20 @@ Graph::display_reverse() {
 	  cout << *(p.first+i) << " " << node << " " << *(p.second+i) << endl;
 	else
 	  cout << *(p.first+i) << " " << node << endl;
+      }
+    }
+  }
+}
+
+bool
+Graph::check_symmetry() {
+  int error = 0;
+  for (int node=0 ; node<nb_nodes ; node++) {
+    pair<vector<int>::iterator, vector<long double>::iterator > p = neighbors(node);
+    for (int i=0 ; i<nb_neighbors(node) ; i++) {
+      int neigh = *(p.first+i);
+      long double weight = *(p.second+i);
+
+      pair<vector<int>::iterator, vector<long double>::iterator > p_neigh = neighbors(neigh);
+      for (int j=0 ; j<nb_neighbors(neigh) ; j++) {
+	int neigh_neigh = *(p_neigh.first+j);
