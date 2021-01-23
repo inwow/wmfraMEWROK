@@ -159,3 +159,18 @@ Graph::display() {
 	else
 	  cout << " " << *(p.first+i);
       }
+    }
+    cout << endl;
+  }
+}
+
+void
+Graph::display_reverse() {
+  for (int node=0 ; node<nb_nodes ; node++) {
+    pair<vector<int>::iterator, vector<long double>::iterator > p = neighbors(node);
+    for (int i=0 ; i<nb_neighbors(node) ; i++) {
+      if (node>*(p.first+i)) {
+	if (weights.size()!=0)
+	  cout << *(p.first+i) << " " << node << " " << *(p.second+i) << endl;
+	else
+	  cout << *(p.first+i) << " " << node << endl;
