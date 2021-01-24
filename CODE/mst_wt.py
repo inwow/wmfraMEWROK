@@ -14,3 +14,18 @@ If you are using this code, kindly cite the following articles:
 import networkx as nx
 import itertools
 import sys
+
+in_file = sys.argv[1]
+out_file = sys.argv[3]
+node_file = sys.argv[4]
+
+f = open(out_file, 'w')
+g = open(node_file, 'w')
+
+G = nx.read_edgelist(in_file, comments='#', data=(('corr',float),('metric',float)))
+G.remove_edges_from(G.selfloop_edges())
+
+nodes=[]
+nodes = list(G.nodes)
+
+mst = list(nx.algorithms.tree.mst.minimum_spanning_edges(G, algorithm='prim', weight='metric', data=True))
