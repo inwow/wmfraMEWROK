@@ -210,3 +210,6 @@ Graph::display_binary(char *outfile) {
   foutput.open(outfile ,fstream::out | fstream::binary);
 
   foutput.write((char *)(&nb_nodes),sizeof(int));
+  foutput.write((char *)(&degrees[0]),sizeof(unsigned long long)*nb_nodes);
+  foutput.write((char *)(&links[0]),sizeof(int)*nb_links);
+}
