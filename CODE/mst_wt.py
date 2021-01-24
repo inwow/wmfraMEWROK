@@ -29,3 +29,27 @@ nodes=[]
 nodes = list(G.nodes)
 
 mst = list(nx.algorithms.tree.mst.minimum_spanning_edges(G, algorithm='prim', weight='metric', data=True))
+
+for x in mst:
+	f.write(x[0] + '\t' + x[1] + '\t')
+	for edge in G.edges(data=True):
+		if x[0] == edge[0] and x[1]==edge[1]:
+			wt = edge[2]['metric']
+			f.write("%f\n" % (wt))
+			break
+		elif x[0] == edge[1] and x[1]==edge[0]:
+			wt = edge[2]['metric']	
+			f.write("%f\n" % (wt))
+			break					
+
+for edge in G.edges(data=True):
+	flag = 0
+
+ 	for x in mst:
+  		if x[0] == edge[0] and x[1]==edge[1]:
+   			flag = 1
+  		elif x[0] == edge[1] and x[1]==edge[0]:
+   			flag = 1
+
+ 	if flag == 0 and edge[2]['corr'] >= float(sys.argv[2]):
+  		f.write(edge[0] + '\t' + edge[1] + '\t')
