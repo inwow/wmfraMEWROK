@@ -191,3 +191,22 @@ Graph::check_symmetry() {
       pair<vector<int>::iterator, vector<long double>::iterator > p_neigh = neighbors(neigh);
       for (int j=0 ; j<nb_neighbors(neigh) ; j++) {
 	int neigh_neigh = *(p_neigh.first+j);
+	long double neigh_weight = *(p_neigh.second+j);
+
+	if (node==neigh_neigh && weight!=neigh_weight) {
+	  cout << node << " " << neigh << " " << weight << " " << neigh_weight << endl;
+	  if (error++==10)
+	    exit(0);
+	}
+      }
+    }
+  }
+  return (error==0);
+}
+
+void
+Graph::display_binary(char *outfile) {
+  ofstream foutput;
+  foutput.open(outfile ,fstream::out | fstream::binary);
+
+  foutput.write((char *)(&nb_nodes),sizeof(int));
