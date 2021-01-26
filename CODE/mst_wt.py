@@ -53,3 +53,8 @@ for edge in G.edges(data=True):
 
  	if flag == 0 and edge[2]['corr'] >= float(sys.argv[2]):
   		f.write(edge[0] + '\t' + edge[1] + '\t')
+		wt = edge[2]['metric']	
+		f.write("%f\n" % (wt))
+  
+for node in nodes:
+ 	g.write(node + '\n')
