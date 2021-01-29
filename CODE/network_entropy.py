@@ -1,1 +1,1 @@
-# Code calc
+# Code calculates network e
