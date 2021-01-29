@@ -1,1 +1,1 @@
-# Code calculates network e
+# Code calculates network entropy for degree and 
