@@ -1,2 +1,2 @@
 # Code calculates network entropy for degree and remaining degree distribution
-# Reference for Network En
+# Reference for Network Entropy: R.V. Sole an
