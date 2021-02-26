@@ -3,4 +3,6 @@
 # Packages required: igraph, numpy
 # python network_entropy.py inputfile_folder_path 1/0 outputfile
 # 1 -- weighted
-# 0 -- unweight
+# 0 -- unweighted
+"""
+==============
