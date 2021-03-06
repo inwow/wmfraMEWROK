@@ -6,4 +6,5 @@
 # 0 -- unweighted
 """
 =================================================================================================
-If you are using this code, kindly cite the following artic
+If you are using this code, kindly cite the following articles:
+(1) S. Venkatesan, R.P
