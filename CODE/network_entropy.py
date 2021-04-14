@@ -18,4 +18,5 @@ import sys
 import glob as gb
 import re
 
-#edge 
+#edge files folder path
+i
