@@ -19,4 +19,5 @@ import glob as gb
 import re
 
 #edge files folder path
-i
+infile=sys.argv[1]
+w
