@@ -20,4 +20,4 @@ import re
 
 #edge files folder path
 infile=sys.argv[1]
-w
+weight=bool(sys.arg
