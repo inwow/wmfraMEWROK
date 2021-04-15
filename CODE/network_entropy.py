@@ -20,4 +20,4 @@ import re
 
 #edge files folder path
 infile=sys.argv[1]
-weight=bool(sys.argv[2]) #input 1 if weigh
+weight=bool(sys.argv[2]) #input 1 if weighted; 0 if unweighted
