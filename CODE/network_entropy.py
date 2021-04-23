@@ -23,4 +23,4 @@ infile=sys.argv[1]
 weight=bool(sys.argv[2]) #input 1 if weighted; 0 if unweighted
 outfile=sys.argv[3]
 
-#
+#function input: di
