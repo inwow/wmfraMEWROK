@@ -26,4 +26,5 @@ outfile=sys.argv[3]
 #function input: dictionary of degree/remaining degree distribution
 def entropy_dg(P):
 	ent=0
-	for ke
+	for key in P:
+		prob=float(P[
