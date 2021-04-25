@@ -27,4 +27,5 @@ outfile=sys.argv[3]
 def entropy_dg(P):
 	ent=0
 	for key in P:
-		prob=float(P[
+		prob=float(P[key])/num_nodes
+		
