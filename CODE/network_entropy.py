@@ -30,4 +30,6 @@ def entropy_dg(P):
 		prob=float(P[key])/num_nodes
 		ent+=prob*np.log2(prob)
 	return -1*ent
-def entropy
+def entropy_rdg(P):
+	ent=0
+	for key 
