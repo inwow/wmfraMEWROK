@@ -33,4 +33,5 @@ def entropy_dg(P):
 def entropy_rdg(P):
 	ent=0
 	for key in P:
-		ent+=P[key]*np.log
+		ent+=P[key]*np.log2(P[key])
+	return -1*e
