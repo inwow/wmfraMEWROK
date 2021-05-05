@@ -36,4 +36,4 @@ def entropy_rdg(P):
 		ent+=P[key]*np.log2(P[key])
 	return -1*ent
 
-#calculate remai
+#calculate remaining degree distri
