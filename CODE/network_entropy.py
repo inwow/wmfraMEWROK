@@ -37,4 +37,5 @@ def entropy_rdg(P):
 	return -1*ent
 
 #calculate remaining degree distribution from degree distribution
-def rem_deg_
+def rem_deg_dist(P):
+	rem_deg=[
