@@ -40,4 +40,5 @@ def entropy_rdg(P):
 def rem_deg_dist(P):
 	rem_deg=[]
 	mean_P=0
-	for
+	for key in P:
+		p
