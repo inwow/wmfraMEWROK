@@ -38,4 +38,6 @@ def entropy_rdg(P):
 
 #calculate remaining degree distribution from degree distribution
 def rem_deg_dist(P):
-	rem_deg=[
+	rem_deg=[]
+	mean_P=0
+	for
