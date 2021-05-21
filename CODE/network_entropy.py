@@ -45,4 +45,4 @@ def rem_deg_dist(P):
 		mean_P+=float(key)*prob
 	print ('\n<E> ',mean_P,'\n')
 	for key in P:
-  
+    		prob=float(P[
