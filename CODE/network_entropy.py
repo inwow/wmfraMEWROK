@@ -46,4 +46,4 @@ def rem_deg_dist(P):
 	print ('\n<E> ',mean_P,'\n')
 	for key in P:
     		prob=float(P[key])/num_nodes
-    		
+    		q=float(key)*prob/fl
