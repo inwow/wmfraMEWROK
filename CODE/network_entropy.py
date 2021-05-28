@@ -48,4 +48,6 @@ def rem_deg_dist(P):
     		prob=float(P[key])/num_nodes
     		q=float(key)*prob/float(mean_P)
     		rem_deg.append((key-1,q))
-	retu
+	return dict(rem_deg)
+
+edgefile
