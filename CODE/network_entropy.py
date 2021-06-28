@@ -52,4 +52,4 @@ def rem_deg_dist(P):
 
 edgefiles=infile
 
-f=open
+f=open(outfile,'w
