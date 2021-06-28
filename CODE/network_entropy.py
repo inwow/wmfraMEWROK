@@ -50,4 +50,6 @@ def rem_deg_dist(P):
     		rem_deg.append((key-1,q))
 	return dict(rem_deg)
 
-edgefile
+edgefiles=infile
+
+f=open
