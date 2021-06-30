@@ -54,4 +54,5 @@ edgefiles=infile
 
 f=open(outfile,'w')
 
-for fil i
+for fil in gb.glob(edgefiles):
+
