@@ -56,3 +56,4 @@ f=open(outfile,'w')
 
 for fil in gb.glob(edgefiles):
 
+	#Read the edge li
