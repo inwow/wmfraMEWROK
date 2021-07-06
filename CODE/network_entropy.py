@@ -56,4 +56,5 @@ f=open(outfile,'w')
 
 for fil in gb.glob(edgefiles):
 
-	#Read the edge list; Change parameter weights and directed for
+	#Read the edge list; Change parameter weights and directed for network of study
+	p=ig.
