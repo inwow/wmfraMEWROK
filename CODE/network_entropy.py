@@ -57,4 +57,4 @@ f=open(outfile,'w')
 for fil in gb.glob(edgefiles):
 
 	#Read the edge list; Change parameter weights and directed for network of study
-	p=ig.
+	p=ig.Graph.Read_Ncol(fil
