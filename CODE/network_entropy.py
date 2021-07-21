@@ -59,4 +59,5 @@ for fil in gb.glob(edgefiles):
 	#Read the edge list; Change parameter weights and directed for network of study
 	p=ig.Graph.Read_Ncol(fil,weights=weight,directed=False,names=True)
 	
-	#n
+	#number of nodes
+	
