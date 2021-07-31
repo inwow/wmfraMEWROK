@@ -60,4 +60,4 @@ for fil in gb.glob(edgefiles):
 	p=ig.Graph.Read_Ncol(fil,weights=weight,directed=False,names=True)
 	
 	#number of nodes
-	
+	num_nodes=p.vcount()
