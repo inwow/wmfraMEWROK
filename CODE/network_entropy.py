@@ -65,3 +65,5 @@ for fil in gb.glob(edgefiles):
 	ig.summary(p)
 
 	dg_dis=p.degree()
+	dg_dis_count=[]
+	fo
