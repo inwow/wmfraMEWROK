@@ -61,3 +61,7 @@ for fil in gb.glob(edgefiles):
 	
 	#number of nodes
 	num_nodes=p.vcount()
+
+	ig.summary(p)
+
+	d
