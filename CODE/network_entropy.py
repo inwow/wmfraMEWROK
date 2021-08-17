@@ -64,4 +64,4 @@ for fil in gb.glob(edgefiles):
 
 	ig.summary(p)
 
-	d
+	dg_dis=p.degree()
