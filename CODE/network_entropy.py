@@ -67,4 +67,6 @@ for fil in gb.glob(edgefiles):
 	dg_dis=p.degree()
 	dg_dis_count=[]
 	for i in set(dg_dis):
-		dg_dis_count.append((
+		dg_dis_count.append((i,dg_dis.count(i)))
+
+	e
