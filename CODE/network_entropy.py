@@ -69,4 +69,5 @@ for fil in gb.glob(edgefiles):
 	for i in set(dg_dis):
 		dg_dis_count.append((i,dg_dis.count(i)))
 
-	edg=entropy_dg(dict(d
+	edg=entropy_dg(dict(dg_dis_count))
+	print
