@@ -70,4 +70,4 @@ for fil in gb.glob(edgefiles):
 		dg_dis_count.append((i,dg_dis.count(i)))
 
 	edg=entropy_dg(dict(dg_dis_count))
-	print ('\nEntropy of degree distribution for the given netwo
+	print ('\nEntropy of degree distribution for the given network is ', edg)
