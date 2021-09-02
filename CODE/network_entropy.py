@@ -71,4 +71,5 @@ for fil in gb.glob(edgefiles):
 
 	edg=entropy_dg(dict(dg_dis_count))
 	print ('\nEntropy of degree distribution for the given network is ', edg)
-	a=rem_deg_dist(dict(dg
+	a=rem_deg_dist(dict(dg_dis_count))
+	erdg=e
