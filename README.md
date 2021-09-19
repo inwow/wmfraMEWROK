@@ -1,1 +1,3 @@
-# Stock Market Network Ind
+# Stock Market Network Indicators
+
+The codes in 
