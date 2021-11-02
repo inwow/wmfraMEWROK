@@ -4,4 +4,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 
 ## Code Details:
 
-### The following script can be u
+### The following script can be used to filter the
