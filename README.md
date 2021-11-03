@@ -4,4 +4,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 
 ## Code Details:
 
-### The following script can be used to filter the cross-correlation matrices and generate edge files a
+### The following script can be used to filter the cross-correlation matrices and generate edge files and node files of 
