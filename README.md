@@ -8,4 +8,5 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 * mst_wt.py : Python script to generate a weighted or unweighted filtered minimum spanning tree + thresholded network from the weighted network of cross-correlation values.  
 
 ### The following scripts can be used to compute the different network measures for the filtered networks:
-* comm_eff.py : Python script to calculate the communcation efficiency of the netwo
+* comm_eff.py : Python script to calculate the communcation efficiency of the network
+* FormanUndirecte
