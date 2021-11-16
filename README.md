@@ -10,4 +10,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 ### The following scripts can be used to compute the different network measures for the filtered networks:
 * comm_eff.py : Python script to calculate the communcation efficiency of the network
 * FormanUndirected.cpp : C++ code to calculate the Forman-Ricci curvature of edges in the network
-* graph_measures.py : Python script to calculate the following me
+* graph_measures.py : Python script to calculate the following measures on the
