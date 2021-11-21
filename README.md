@@ -11,4 +11,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 * comm_eff.py : Python script to calculate the communcation efficiency of the network
 * FormanUndirected.cpp : C++ code to calculate the Forman-Ricci curvature of edges in the network
 * graph_measures.py : Python script to calculate the following measures on the network, namely, Number of edges, Average degree, Average Weighted Degree, Edge Density, Average Clustering coefficient
-* MengerHaantje
+* MengerHaantjesUndirected.py : Python 
