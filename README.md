@@ -12,3 +12,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 * FormanUndirected.cpp : C++ code to calculate the Forman-Ricci curvature of edges in the network
 * graph_measures.py : Python script to calculate the following measures on the network, namely, Number of edges, Average degree, Average Weighted Degree, Edge Density, Average Clustering coefficient
 * MengerHaantjesUndirected.py : Python script to compute Menger-curvature and Haantjes-curvature for all the edges in an unweighted network
+* network_entropy.
