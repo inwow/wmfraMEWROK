@@ -13,4 +13,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 * graph_measures.py : Python script to calculate the following measures on the network, namely, Number of edges, Average degree, Average Weighted Degree, Edge Density, Average Clustering coefficient
 * MengerHaantjesUndirected.py : Python script to compute Menger-curvature and Haantjes-curvature for all the edges in an unweighted network
 * network_entropy.py : Python script to calculate network entropy using degree and remaining degree distribution
-* OR-Undir.py : P
+* OR-Undir.py : Python script to compute th
