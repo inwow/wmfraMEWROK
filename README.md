@@ -14,4 +14,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 * MengerHaantjesUndirected.py : Python script to compute Menger-curvature and Haantjes-curvature for all the edges in an unweighted network
 * network_entropy.py : Python script to calculate network entropy using degree and remaining degree distribution
 * OR-Undir.py : Python script to compute the Ollivier-Ricci curvature of edges in the network
-* Folder 'louvain-generic' within folder 'COD
+* Folder 'louvain-generic' within folder 'CODE' contains the co
