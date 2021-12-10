@@ -16,4 +16,5 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 * OR-Undir.py : Python script to compute the Ollivier-Ricci curvature of edges in the network
 * Folder 'louvain-generic' within folder 'CODE' contains the code to compute the Louvain modularity of the network; this is a copy of the open source code made available by the original authors of the method
 	
-	To r
+	To run:  
+		(1) ./louvain
