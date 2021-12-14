@@ -17,4 +17,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 * Folder 'louvain-generic' within folder 'CODE' contains the code to compute the Louvain modularity of the network; this is a copy of the open source code made available by the original authors of the method
 	
 	To run:  
-		(1) ./louvain-generic/convert -i "insert edge file" -o ./temp/$folder/graph.bin -w ./temp/$fold
+		(1) ./louvain-generic/convert -i "insert edge file" -o ./temp/$folder/graph.bin -w ./temp/$folder/graph.weights
