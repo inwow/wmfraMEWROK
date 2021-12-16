@@ -18,4 +18,6 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 	
 	To run:  
 		(1) ./louvain-generic/convert -i "insert edge file" -o ./temp/$folder/graph.bin -w ./temp/$folder/graph.weights  
-		(2) ./louvain-generic/louvain ./temp/$folder/graph.bin -w ./temp/$folder/graph.weights >& ./temp/$fold
+		(2) ./louvain-generic/louvain ./temp/$folder/graph.bin -w ./temp/$folder/graph.weights >& ./temp/$folder/graph.tree
+
+### The fol
