@@ -23,4 +23,6 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 ### The following MATLAB 2020a program can be used to compute different traditional market indicators:
 * analysis_matlab.m : Matlab code to generate index log-returns, mean market correlation, GARCH volatility, minimum risk Markowitz portfolio. The moving epochs and the price time series are the input parameters to code.
 
-## Data descripti
+## Data description:
+
+* The data 
