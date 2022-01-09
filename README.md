@@ -25,4 +25,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 
 ## Data description:
 
-* The data was collected from 
+* The data was collected from the public domain 
