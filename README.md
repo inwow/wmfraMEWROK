@@ -25,4 +25,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 
 ## Data description:
 
-* The data was collected from the public domain of Yahoo finance database for two stock markets in two different countries, namely, USA S&P-500 index for 194 stocks and
+* The data was collected from the public domain of Yahoo finance database for two stock markets in two different countries, namely, USA S&P-500 index for 194 stocks and Japanese Nikkei
