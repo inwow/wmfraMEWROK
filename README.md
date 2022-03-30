@@ -28,4 +28,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 * The data was collected from the public domain of Yahoo finance database for two stock markets in two different countries, namely, USA S&P-500 index for 194 stocks and Japanese Nikkei-225 index for 165 stocks spanning a 32-year period from 2 January 1985 (02-01-1985) to 30 December 2016 (30-12-2016). 
 
 * Archived folders 'USA22d22s' and 'JPN22d22s' contain cross-correlation matrices computed using non-overlapping time windows with epoch of 22 days while folders 'USA22d5s' and 'JPN22d5s' contain cross-correlation matrices computed using overlapping time windows with epoch of 22 days and overlap of 5 days. These cross-correlation matrices were used in the construction of the networks. The above-mentioned archived folder can be downloaded from :  
-	(1) Folder 'USA22d22s' -  https://www.imsc.res.in/~asamal/data
+	(1) Folder 'USA22d22s' -  https://www.imsc.res.in/~asamal/data/StockMarkIndica
