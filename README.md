@@ -31,4 +31,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 	(1) Folder 'USA22d22s' -  https://www.imsc.res.in/~asamal/data/StockMarkIndicators/USA22d22s.tar.gz  
 	(2) Folder 'USA22d5s'  -  https://www.imsc.res.in/~asamal/data/StockMarkIndicators/USA22d5s.tar.gz  
 	(3) Folder 'JPN22d22s' -  https://www.imsc.res.in/~asamal/data/StockMarkIndicators/JPN22d22s.tar.gz  
-	(4) Folder 'JPN22d5s'  -  https://www.imsc.res.in/~asamal/data/StockMarkIn
+	(4) Folder 'JPN22d5s'  -  https://www.imsc.res.in/~asamal/data/StockMarkIndicators/JPN22d5s.tar
