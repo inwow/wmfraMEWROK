@@ -33,4 +33,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 	(3) Folder 'JPN22d22s' -  https://www.imsc.res.in/~asamal/data/StockMarkIndicators/JPN22d22s.tar.gz  
 	(4) Folder 'JPN22d5s'  -  https://www.imsc.res.in/~asamal/data/StockMarkIndicators/JPN22d5s.tar.gz  
 
-* The cross-correlation matrices contained in different files 
+* The cross-correlation matrices contained in different files in the above-mentio
