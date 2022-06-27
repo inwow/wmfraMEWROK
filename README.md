@@ -37,4 +37,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
   "stock1	stock2	Correlation	Distance", 
   where distance is computed as Distance=sqrt(2*(1-c)) with c as correlation.
 
-* The files USA22d5s.xlsx, USA22d22s.xlsx, JPN22d5s.xlsx and JPN22d22s.xlsx contain dictionaries relating cross-co
+* The files USA22d5s.xlsx, USA22d22s.xlsx, JPN22d5s.xlsx and JPN22d22s.xlsx contain dictionaries relating cross-correlation matrices 
