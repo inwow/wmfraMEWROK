@@ -39,4 +39,4 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 
 * The files USA22d5s.xlsx, USA22d22s.xlsx, JPN22d5s.xlsx and JPN22d22s.xlsx contain dictionaries relating cross-correlation matrices in the folders 'USA22d5s', 'USA22d22s', 'JPN22d5s' and 'JPN22d22s', respectively, and the start date / end date of different cross-correlation matrices. 
 
-### These codes were written while carrying out research
+### These codes were written while carrying out research reported in
