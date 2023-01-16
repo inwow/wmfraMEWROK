@@ -41,4 +41,5 @@ The codes in the 'StockMarkNetIndicators' repository can be used to filter cross
 
 ### These codes were written while carrying out research reported in the following manuscripts:
 [1] A. Samal, H.K. Pharasi, S. J. Ramaia, H. Kannan, E. Saucan, J. Jost & A. Chakraborti, Network geometry and market instability, R. Soc. Open Sci. 8: 201734 (2021). https://doi.org/10.1098/rsos.201734  
-[2] S. Venkatesan, R.P. Vivek-Ananth, R.P. Sreejith, P. Mangalapandi, A.A. Hassanali & A. Samal, Network approach towards understanding the crazing in glassy amorphous polymers, Journal of Statistical Mechanics: Theory and Experiment 043305 (2018). https://doi.org/10.1088/1742-54
+[2] S. Venkatesan, R.P. Vivek-Ananth, R.P. Sreejith, P. Mangalapandi, A.A. Hassanali & A. Samal, Network approach towards understanding the crazing in glassy amorphous polymers, Journal of Statistical Mechanics: Theory and Experiment 043305 (2018). https://doi.org/10.1088/1742-5468/aab688  
+[3
